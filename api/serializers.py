@@ -32,6 +32,10 @@ class ItemsSerializer(serializers.ModelSerializer):
     class Meta:
         model=Items
         fields="__all__"
+class StudentAdmissionSerializer(serializers.ModelSerializer):
+    class Meta:
+        model=StudentAdmission
+        fields="__all__"
 
 
 class QuotationSerializer(serializers.ModelSerializer):

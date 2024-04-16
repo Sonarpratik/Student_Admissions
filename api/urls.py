@@ -22,6 +22,7 @@ router.register('category',views.CategoryViewSet,basename='category')
 router.register('status',views.StatusViewSet,basename='status')
 router.register('image',views.ImageViewSet,basename='image')
 router.register('designimage',views.DesignGalleryViewSet,basename='designimage')
+router.register('student',views.StudentViewSet,basename='student')
 
 urlpatterns = [
     path('',include(router.urls)),

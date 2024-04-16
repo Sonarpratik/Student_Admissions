@@ -383,6 +383,10 @@ class ImageViewSet(viewsets.ModelViewSet):
     queryset = InteriorGallery.objects.all()
     serializer_class = ImageSerializer
 
+class StudentViewSet(viewsets.ModelViewSet):
+    queryset = StudentAdmission.objects.all()
+    serializer_class = StudentAdmissionSerializer
+
 
 class DesignGalleryViewSet(viewsets.ModelViewSet):
     queryset = DesignGallery.objects.all()
